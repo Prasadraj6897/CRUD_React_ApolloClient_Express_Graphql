@@ -1,0 +1,32 @@
+cd server
+npm init -y
+npm install -g typescript
+
+tsc --init
+
+npm i typescript ts-node express nodemon cors typeorm mysql2 graphql express-graphql
+
+npm i @types/cors @types/express @types/node
+
+change es5 to es6 in tsconfig.json
+
+uncomment line 17 and 18 and 33, 47, 65 and 66 in tsconfig.json (Changes Everytime see the file)
+
+create dist and src folder in server
+
+ADD dist and src name in iline 17 and 18 in tsconfig.json
+
+ADD below command in package.json
+        "start": "node ./dist/index.ts",
+        "dev": "nodemon ./src/index.ts",
+        "build": "tsc -p ."
+
+npm run dev
+
+if error comes nmp i -g ts-node
+
+
+in Client
+create-react-app client --template typescript
+
+npm i @apollo/client graphql
